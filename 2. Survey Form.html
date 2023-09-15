@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form Template</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Initial template for a survey form"/>
+        <link href="./2. Survey Form.css" rel="stylesheet"/>
+    </head>
+    <body>  
+        <header>
+            <h1 id="title">Website Simple Survey Template </h1>
+            <p id="description">Thank you for taking the time to check this questionnaire.</p>
+        </header>
+        <main>
+            <form id="survey-form" action="">
+                <fieldset id="user-info">
+                    <label id="name-label">Name: </label>
+                    <input type="text" id="name" placeholder=" Enter your Full Name" required/>
+                    <label id="email-label" for="email">Email: </label>
+                    <input type="email" id="email" placeholder=" Enter your Email" required/>
+                    <label id="number-label" for="number">Age (Optional): </label><input type="number" id="number" placeholder=" Enter your Age" min="12" max="112"/></label>
+                    <p id="dropdown-label" for="dropdown" class="list"> Which option best describes your current role? </p>
+                    <select id="dropdown">
+                        <option value="0">Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer Not To Say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset id="survey">
+                    <p id="question-1">Would you recommend my Survey to a friend?<p>
+                    <label for="answer-1"><input type="radio" id="answer-1" name="answer-1" value="definitely" checked/> Definitely</label><br>
+                    <label for="answer-2"><input type="radio" id="answer-2" name="answer-1" value="maybe"/> Maybe</label><br>
+                    <label for="answer-3"><input type="radio" id="answer-3" name="answer-1" value="not-sure" checked/> Not Sure</label>
+                    <p id="question-2">What would you like to see improved on my part? (Check all that apply)<p>
+                    <label for="answer-5"><input type="checkbox" id="answer-5" name="answer-2" value="html"/> HTML</label><br>
+                    <label for="answer-6"><input type="checkbox" id="answer-6" name="answer-2" value="css"/> CSS</label><br>
+                    <label for="answer-7"><input type="checkbox" id="answer-7" name="answer-2" value="js"/> JS</label>
+                </fieldset>
+                <fieldset id="suggestion">
+                    <p id="question-3">Any comments or suggestions for improvement?</p>
+                    <textarea id="comment" placeholder="Enter your comment here..." rows="3" cols="60"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit" id="submit"/>
+            </form>
+        </main>
+    </body>
+</html>
